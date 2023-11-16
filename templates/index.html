@@ -1,0 +1,36 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name=""viewport" content=""width=device-width,initial-scale=1.0">
+        <title>PyFit</title>
+        <link rel="stylesheet" href="{% static 'style1.css' %}">
+    </head>
+    <body>
+        <div class="hero">
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="{% static 'video.mp4' %}" type="video/mp4">
+            </video>
+
+
+            <nav>
+                <a href="_">
+                    <img src="{% static 'logo1.png' %}" class="logo">
+                    </a>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="aboutpyfit">ABOUT PYFIT</a></li>
+                    <li><a href="contact">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <h1>PYFIT</h1>
+                <h3>ML MODEL FITTER</h3>
+                <!-- <a href="upload.html">Get Started!</a> -->
+                <a href="home">Get Started!</a>
+            </div>
+        </div>
+
+    </body>
+</html>

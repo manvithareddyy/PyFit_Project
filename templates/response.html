@@ -1,0 +1,102 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom File Upload Button</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- Google Fonts  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{% static 'response.css' %}" />
+
+
+    <style>  
+        .container1{  
+        text-align: center;  
+        }   
+        #hi{
+            color:white;
+            text-align:center;
+            padding-top: 20px;
+        }
+
+        </style>  
+
+  </head>
+  <body>
+    <nav>
+      <a href="_">
+        <img src="{% static 'logo1.png' %}" class="logo">
+      </a>
+        <ul>
+            <li><a href="_">HOME</a></li>
+            <li><a href="aboutpyfit">ABOUT PYFIT</a></li>
+            <li><a href="aboutus">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 id="hi">FILE SUCCESFULLY SUBMITTED!</h1>
+    <h2 id="hi">Choose your model:</h2>
+    <div class="container">
+        <form method="post" action="abcd">
+            <center>
+                {% csrf_token %}
+            <input type="text" name="option"></input>
+            <button type="submit">Submit</button>
+            <br>
+            <br>
+            <table>
+                <tr>
+                  <th>CLASSIFIERS:</th>
+                  <th>REGRESSORS:</th>
+                </tr>
+                <tr>
+                  <td>Decision tree-Type 1</td>
+                  <td>Linear Regression- Type 6</td>
+                </tr>
+                <tr>
+                  <td>Logistic Regression-Type 2</td>
+                  <td>SVM Regression- Type 7</td>
+                </tr>
+                <tr>
+                    <td>Naive Bayes-Type 3</td>
+                </tr>
+                <tr>
+                    <td>KNN classifier-Type 4</td>
+                </tr>
+                <tr>
+                    <td>SVM Classifier-Type 5</td>
+                </tr>
+              </table>
+
+            <!--<h1>CLASSIFIERS:</h1>
+            <h3>Decision tree-Type 1</h3>
+            <h3>Logistic Regression-Type 2</h3>
+            <h3>Naive Bayes-Type 3</h3>
+            <h3>KNN classifier-Type 4</h3>
+            <h3>SVM Classifier-Type 5</h3>-->
+            </center>   
+        </form>
+    </div>
+    <footer>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2023. Designed by <span>Uday  </span><span>Manvitha  </span><span>Arun</span></p>
+        </div>
+    </footer>
+  </body>
+</html>
+
+

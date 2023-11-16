@@ -1,0 +1,92 @@
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PyFit File Upload </title>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href=" {% static 'style2.css' %}" />
+
+
+    <style>  
+        .container1{  
+        text-align: center;  
+        }  
+        #btn{  
+        font-size: 15px;  
+        }  
+        #hi{
+            color:white;
+            text-align:center;
+            padding-top: 20px;
+        }
+        .mt-5 { background-color: #222; display: none;border-radius: 4px; border-style: none; box-sizing: border-box; color: #fff; cursor: pointer; display: inline-block; font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif; font-size: 16px; font-weight: 700; line-height: 1.5; margin: 1; max-width: none; min-height: 44px; min-width: 10px; outline: none; overflow: hidden; padding: 9px 20px 8px; position: relative; text-align: center; text-transform: none; user-select: none; -webkit-user-select: none; touch-action: manipulation; width: 50%; } .button-31:hover, .button-31:focus { opacity: .75; }
+        </style>  
+
+  </head>
+  <body>
+    <nav>
+        <a href="_">
+        <img src="{% static 'logo1.png' %}" class="logo">
+        </a>
+        <ul>
+            <li><a href="_">HOME</a></li>
+            <li><a href="aboutpyfit">ABOUT PYFIT</a></li>
+            <li><a href="contact">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 id="hi">UPLOAD YOUR DATASET HERE:</h1>
+    <center>
+        <form class="container mt-5" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div>
+                    
+              <input type="file" name="file" class="mt-5" id="file">
+                    
+            </div>
+            <br>
+            <!-- <label for="file">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            &nbsp; Choose Files To Upload
+            </label> -->
+            <br>
+            <br>
+            
+            <!-- <div id="num-of-files">No Files Choosen</div>
+            <ul id="files-list"></ul> -->
+            <div class="container1">
+            <button type="submit" class="btn btn-success" >Submit</button>
+            </div>
+        </form>
+    </center>
+    <footer>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2023. Designed by <span>Uday  </span><span>Manvitha  </span><span>Arun</span></p>
+        </div>
+    </footer>
+  </body>
+</html>
+
+
+
+

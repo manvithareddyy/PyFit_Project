@@ -1,0 +1,66 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PyFit Team</title>
+	<link rel="stylesheet" href="{% static 'aboutus.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        
+        <a href="_">
+          <img src="{% static 'logo1.png' %}" class="logo">
+          </a>
+        <ul>
+            <li><a href="_">HOME</a></li>
+            <li><a href="aboutpyfit">ABOUT PYFIT</a></li>
+            <li><a href="contact">CONTACT US</a></li>
+        </ul>
+    </nav>
+<div class="wrapper">
+  <h1>OUR TEAM</h1>
+  <div class="team">
+    <div class="team_member">
+      <div class="team_img">
+        <img src="{% static 'team1.png' %}" alt="Team_image">
+      </div>
+      <h3>Uday Belde</h3>
+      <p class="role">BackEnd Developer</p>
+      <p>Hello! I am Uday. Experienced Django developer with a passion for crafting efficient and scalable backend solutions. Committed to delivering robust web applications that elevate user experiences.</p>
+      </div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="{% static 'team2.png' %}" alt="Team_image">
+      </div>
+      <h3>Manvitha Yedulla</h3>
+      <p class="role">FrontEnd Developer</p>
+      <p>Hello! I am Manvitha. Innovative frontend developer with expertise in crafting engaging user interfaces and seamless user experiences. Proficient in HTML, CSS, JavaScript, and modern frameworks.</p></div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="{% static 'team3.png' %}" alt="Team_image">
+      </div>
+      <h3>Arun Kousik</h3>
+      <p class="role">Machine Learning Developer</p>
+      <p>Hello! I am Arun. Data-driven machine learning developer with a focus on developing intelligent solutions. Committed to pushing the boundaries of AI to solve real-world challenges.</p>
+    </div>
+  </div>
+</div>	
+<footer>
+    <div class="footer-content">
+        <h3>Connect here!</h3>
+        
+            <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>  
+    </div>
+    
+</footer>
+</body>
+</html>

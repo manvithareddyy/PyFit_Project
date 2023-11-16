@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("backgroundcontact.png");
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.wrapper{
+  margin-top: 10%;
+}
+
+.wrapper h1{
+  font-family: 'Poppins',sans-serif;
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+  color:white;
+  transition: 0.5s;
+}
+.wrapper h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color:transparent;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #030303;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #060606;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: #000000;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.team .team_member .team_img{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  
+  .team .team_member .team_img img{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+  }
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fdfcfc;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 5px;
+    color: #000000;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #000000;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: rgb(15, 210, 210);
+}
+nav{
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    padding:20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+nav .logo{
+    width:150px;
+}
+nav ul li{
+    list-style:none;
+    display:inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration:none;
+    color: #fff;
+    font-size: 17px;
+}
+nav ul li a:hover{
+    -webkit-text-stroke: 2px #fff;
+    color:transparent;
+}

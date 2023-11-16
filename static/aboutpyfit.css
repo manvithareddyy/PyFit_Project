@@ -1,0 +1,108 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+} 
+body{
+    width:100%;
+    background-image: url("backgroundcontact.png");
+}
+.title h1{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 42px;
+    color: white;
+}
+.title h1::after{
+    content: "";
+    height: 4px;
+    width: 230px;
+    background-color: #fff;
+    display: block;
+    margin: auto;
+}
+.title p{
+    text-align: center;
+    padding: 3px;
+    color: #fff;
+    font-size: 15px;
+}
+.services{
+    width:85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+}
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin:0px 20px;
+    padding:20px 20px;
+    background-color: #efefef;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card .icon{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.card h2{
+     font-size: 28px;
+     color: #000;
+     margin-bottom: 20px;
+}
+.card p{
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #000;
+}
+.card:hover{
+    background-color: transparent;
+    transition: 0.4s ease;
+}
+.card:hover i,
+.card:hover h2,
+.card:hover p{
+    color: #fff;
+}
+.card:hover i{
+    transform: translateY(-20px);
+}
+.card:hover i,
+.card:hover h2{
+    transition: all 400ms ease-in-out;
+}
+nav{
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    padding:20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+nav .logo{
+    width:150px;
+}
+nav ul li{
+    list-style:none;
+    display:inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration:none;
+    color: #fff;
+    font-size: 17px;
+}
+nav ul li a:hover{
+    -webkit-text-stroke: 2px #fff;
+    color:transparent;
+}

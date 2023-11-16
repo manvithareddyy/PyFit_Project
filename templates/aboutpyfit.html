@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PyFit</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'aboutpyfit.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <a href="_">
+        <img src="{%static 'logo1.png' %}" class="logo">
+        </a>
+        <ul>
+            <li><a href="_">HOME</a></li>
+            <li><a href="aboutpyfit">ABOUT PYFIT</a></li>
+            <li><a href="contact">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <div class="section">
+        <div class="title">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>ABOUT PYFIT</h1><br>
+            <p>DISCLAIMER*</p>
+            <br>
+            <p>1. User must upload only .csv file.</p>
+            <p>2. The dataset should have 'target' column at the last.</p>
+            <p>3. The data type should be purely string or numeric ex. '123','abc'. Cannot be of type 'abc123'.</p>
+            <p>4. In every column (60-70)% of the data should be filled. Large missing data may mislead to wrong calculations.</p>
+            <p>5. The user should know what type of model the user needs. Example: Classification or Regression.</p>
+        </div>
+        <div class="services">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa fa-book"></i>
+                        </div>
+                            <h2>MISSION</h2>
+                            <p>The mission of PyFit is to provide a user-friendly and efficient platform for training and evaluating machine learning models, empowering users to harness the power of AI technology effectively.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                            <h2>VISION</h2>
+                            <p>The vision of PyFit is to become a leading open-source framework that democratizes machine learning, enabling individuals and organizations to build state-of-the-art models with ease and scalability.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa fa-pencil"></i>
+                        </div>
+                            <h2>ADVANTAGES</h2>
+                            <p>PyFit offers a simple and intuitive interface, making it easy for users to train and evaluate models without extensive coding.Its modular design and compatibility empower users saving time and effort.</p>
+                    </div>
+        </div>
+    </div>
+</body>
+</html>
